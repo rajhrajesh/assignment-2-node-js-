@@ -1,0 +1,58 @@
+//API -1 POST Register
+POST http://localhost:3000/register/
+Content-Type: application/json
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+###
+//API - 2 POST Login
+POST http://localhost:3000/login/
+Content-Type: application/json
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+###
+//API - 3 GET /user/tweets/feed/
+GET http://localhost:3000/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.Sm9lQmlkZW4.rfjlXKtsqskcsxmNaqOse7tJlvK5IvbAj_lMWs1QjRo
+###
+//API - 4 GET /user/following/
+GET http://localhost:3000/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.Sm9lQmlkZW4.rfjlXKtsqskcsxmNaqOse7tJlvK5IvbAj_lMWs1QjRo
+###
+//API - 5 GET /user/followers/
+GET http://localhost:3000/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.Sm9lQmlkZW4.rfjlXKtsqskcsxmNaqOse7tJlvK5IvbAj_lMWs1QjRo
+###
+//API - 6 GET /tweets/:tweetId/
+
+GET http://localhost:3000/tweets/1/
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.Sm9lQmlkZW4.rfjlXKtsqskcsxmNaqOse7tJlvK5IvbAj_lMWs1QjRo
+###
+//API - 7 GET /tweets/:tweetId/likes/
+GET http://localhost:3000/tweets/2/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.Sm9lQmlkZW4.rfjlXKtsqskcsxmNaqOse7tJlvK5IvbAj_lMWs1QjRo
+###
+//API - 8 GET /tweets/:tweetId/replies/
+GET http://localhost:3000/tweets/2/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.Sm9lQmlkZW4.rfjlXKtsqskcsxmNaqOse7tJlvK5IvbAj_lMWs1QjRo
+###
+//API - 9 GET /user/tweets/
+GET http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.Sm9lQmlkZW4.rfjlXKtsqskcsxmNaqOse7tJlvK5IvbAj_lMWs1QjRo
+###
+//API -10 POST /user/tweets/
+POST http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.Sm9lQmlkZW4.rfjlXKtsqskcsxmNaqOse7tJlvK5IvbAj_lMWs1QjRo
+Content-Type: application/json
+{
+   "tweet": "The Mornings..."
+}
+###
+//API -11 DELETE /tweets/:tweetId/
+DELETE http://localhost:3000/tweets/3/
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.Sm9lQmlkZW4.rfjlXKtsqskcsxmNaqOse7tJlvK5IvbAj_lMWs1QjRo
